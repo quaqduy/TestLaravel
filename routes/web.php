@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DetailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,4 @@ use App\Http\Controllers\LoginController;
 
 Route::get('/', [HomeController::class,'getHomeController']);
 Route::get('/login',[LoginController::class,'getLoginController']);
+Route::get('/detail/{id}',[DetailController::class,'getDetailController']);

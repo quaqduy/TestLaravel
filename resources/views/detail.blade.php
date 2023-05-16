@@ -7,14 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Home page</h1>
-    <a href='/login'>login</a>
+    <h1>Detail page</h1>
 
+    <p>ID: {{ $id }}</p>
 
-    <form method = 'PUT' action = '/detail' >
-        <input type="text" name = 'id'> 
-        <input type="submit" value='View detail'>
-    </form>
-
+    <a href='/'>Home</a>
 </body>
 </html>
